@@ -7,7 +7,7 @@
 
 body {
     background-color: hsl(206.88,70%,43.14%);
-    background-image: url(/img/sky-background.png);
+    background-image: url(images/sky-background.png)
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -124,7 +124,7 @@ body {
 }
 
 .enemy {
-    background-image: url(/img/enemy-img.png);
+    background-image: url(images/enemy-img.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
