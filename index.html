@@ -1,0 +1,70 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pegue o Pombo!</title>
+        <!-- Styles -->
+        <link rel="stylesheet" href="styles/style.css">
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <!-- Scripts -->
+        <script src="scripts/script.js" defer></script>
+    </head>
+    <body>
+        <div class="starter-container ">
+            <div class="title-and-logo">
+                <h1>Pegue o Pombo!</h1>
+                <img id="game-logo" src="img/logo.png" alt="Game Logo">
+            </div>
+            <div class="game-description">
+                <p>Clique e pegue o máximo de 
+                    <span style="color: brown;">pombos-correio</span>
+                    possíveis antes do tempo acabar!</p>
+            </div>
+            <!-- <div class="difficult-selector">
+                <p>Escolha a dificuldade do jogo:</p>
+                <p>1  2  3</p>
+                <div class="selector-container">
+                    <div class="selector active" id="1"></div>
+                    <div class="selector" id="2"></div>
+                    <div class="selector" id="3"></div>
+                </div>
+            </div> -->
+            <button id="start-btn">Começar</button>
+            <img id="muttley" src="img/muttley.png" alt="Muttley Image">
+        </div>
+        <main class="main-content hide">
+            <div class="score-and-time">
+                <div class="timer-container">
+                    <h2>Time:</h2>
+                    <h2 id="time-left">30</h2>
+                </div>
+                <div class="score-container">
+                    <h2>Score:</h2>
+                    <h2 id="score">0</h2>
+                </div>
+            </div>
+            <div class="sky-container">
+                <div class="sky-box" id="1"></div>
+                <div class="sky-box" id="2"></div>
+                <div class="sky-box" id="3"></div>
+                <div class="sky-box" id="4"></div>
+                <div class="sky-box" id="5"></div>
+                <div class="sky-box" id="6"></div>
+                <div class="sky-box" id="7"></div>
+                <div class="sky-box" id="8"></div>
+                <div class="sky-box" id="9"></div>
+            </div>
+        </main>
+        <div class="result-container hide">
+            <h2 id="result-title">Fim de Jogo!</h2>
+            <h3>Seu resultado foi:</h3>
+            <span style="font-size: 2rem;" id="result"></span>
+            <h3>pombos capturados!</h3>
+            <button id="restart-btn">Recomeçar</button>
+        </div>
+    </body>
+    </html>

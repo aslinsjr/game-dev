@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', system-ui;
+}
+
+body {
+    background-color: hsl(206.88,70%,43.14%);
+    background-image: url(/img/sky-background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Starter Menu */
+.starter-container {
+    width: 500px;
+    height: 80vh;
+    background-color: burlywood;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px 0px black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.title-and-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-and-logo h1 {
+    font-size: 1.5rem;
+}
+
+#game-logo {
+    width: 100px;
+    border-radius: 50%;
+    border: solid 1px black;
+}
+
+.game-description {
+    text-align: center;
+    line-height: 150%;
+    margin: 2rem;
+}
+
+/* .difficult-selector {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 1rem;
+}
+
+.selector-container {
+    width: 100px;
+    height: 20px;
+    background-color: black;
+    display: flex;
+    gap: 1.3rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.selector {
+    width: 10px;
+    height: 10px;
+    background-color: brown;
+    visibility: hidden;
+    border-radius: 3px;
+}
+
+.active {
+    visibility: visible;
+} */
+
+#start-btn {
+    padding: 1rem;
+    border-radius: 20px;
+    margin: 2rem auto;
+    display: flex;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#muttley {
+    position: absolute;
+    top: 320px;
+    left: 0;
+    width: 200px;
+}
+
+/* Main Content */
+.score-and-time {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+}
+
+.score-container,
+.timer-container {
+    display: flex;
+}
+
+.sky-container {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    width: 100%;
+    height: 70vh;
+}
+
+.enemy {
+    background-image: url(/img/enemy-img.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+}
+
+/* Result Container */
+.result-container {
+    width: 500px;
+    height: 80vh;
+    background-color: burlywood;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px 0px black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#result-title {
+    font-size: 2rem;
+}
+
+#restart-btn {
+    padding: 1rem;
+    border-radius: 20px;
+    margin: 2rem auto;
+    display: flex;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    .starter-container,
+    .result-container,
+    .score-and-time {
+        width: 375px;
+    }
+
+    .title-and-logo h1 {
+        font-size: 1rem;
+    }
+
+    .game-description {
+        margin: 0;
+    }
+
+    .game-description p {
+        font-size: 0.8rem;
+    }
+
+    #muttley {
+        left: -30px;
+        top: 250px;
+    }
+
+    .score-and-time {
+        font-size: 0.8rem;
+        padding: 1rem;
+    }
+
+    #result-title {
+        font-size: 1.5rem;
+    }
+}
