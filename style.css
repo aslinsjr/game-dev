@@ -185,8 +185,7 @@ body {
     }
 
     #muttley {
-        left: -30px;
-        top: 250px;
+        display: none;
     }
 
     .score-and-time {
